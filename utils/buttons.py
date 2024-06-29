@@ -1,11 +1,10 @@
 import streamlit as st
 
-def display_download_button(file_name, date=None):
-    # st.markdown(download_button_css, unsafe_allow_html=True)
 
-    columns = st.columns([1,1,1,1,1])
+def download_full_data(file_path, file_name, date, source):
+    columns = st.columns([0.2, 0.1, 0.1, 0.6])
     with columns[0]:
-        with open(f"data/{file_name}") as f:
+        with open(file_path) as f:
             st.download_button(
                 label="Download Full Data",
                 data=f,
@@ -13,5 +12,15 @@ def display_download_button(file_name, date=None):
                 mime="text/csv",
             )
     with columns[1]:
-        if date:
-            st.caption(f"Last Update:  \n %s" % date)
+        st.caption(f"Latest Update:  \n %s" % date)
+    with columns[2]:
+        st.caption("Data Source:  \n [link](%s)" % source)
+
+
+def multi_select(caption, options, *default):
+    if len(default) > 0:
+        box = st.multiselect(caption, options, default=list(default))
+    else:
+        box = st.multiselect(caption, options, default=None)
+    return box
+

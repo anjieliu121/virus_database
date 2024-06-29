@@ -24,5 +24,29 @@ st.header("Contact Us")
 # embedded meyers lab
 iframe_src = "http://www.bio.utexas.edu/research/meyers/index.html"
 components.iframe(iframe_src, height=400, scrolling=True)
+st.divider()
+
+# author
+st.header("Other Resources")
 # linkedin link
-st.link_button(f"Contact Web Creator 👈", "https://www.linkedin.com/in/anjie-liu-a73574253/")
+col1, col2, col3 = st.columns([0.2, 0.2, 0.8], vertical_alignment="top")
+with col1:
+    st.markdown("Database Author")
+    st.markdown(
+        """
+        <a href="https://www.linkedin.com/in/anjie-liu-a73574253/">
+            <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="Repository" width="100" height="100">
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
+with col2:
+    st.markdown("Open-Source Code & Data")
+    st.markdown(
+        """
+        <a href="https://github.com/anjieliu121/virus_database">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Repository" width="100" height="100">
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
