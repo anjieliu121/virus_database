@@ -6,6 +6,8 @@ from utils.data_display import display_full_data
 
 # set up
 st.markdown("# 2023 Respiratory Virus Response | COVID-19, Flu, RSV")
+"""
+
 page = read_json("respiratory_viruses/megadata/response.json")
 st.markdown(f">{page["description"]}")
 # get data
@@ -20,3 +22,4 @@ options = full_data["geography"].unique().tolist()
 options.insert(0, options.pop(options.index("United States")))
 multi_select("Select a Geography", options, "United States")
 
+"""
