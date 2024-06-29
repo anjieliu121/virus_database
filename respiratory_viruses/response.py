@@ -7,7 +7,8 @@ from utils.data_display import display_full_data
 # set up
 st.markdown("# 2023 Respiratory Virus Response | COVID-19, Flu, RSV")
 page = read_json("respiratory_viruses/megadata/response.json")
-st.markdown(f">{page["description"]}")
+# SyntaxError: f-string: unmatched '[' -> inside f"", we cannot have another pair of double quotes, must be single quotes
+st.markdown(f">{page['description']}")
 """
 # get data
 file_path = f"{page["section"]}/data/{page["file_name"]}"
