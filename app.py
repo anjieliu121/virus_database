@@ -20,7 +20,7 @@ for k in pages_json.keys():
 
 pg = st.navigation(
     {
-        "Meyers Lab": pages["meyers"],
+        "Meyers Database": pages["meyers"],
         "Respiratory Viruses": pages["respiratory_viruses"],
         "COVID-19": [],
         "Flu": [],
@@ -30,7 +30,8 @@ pg = st.navigation(
 )
 
 # add ut logo to sidebar
-st.sidebar.image("images/ut_logo.png")
+# st.sidebar.image("https://github.com/anjieliu121/virus_database/blob/main/images/database_logo.png?raw=true")
+st.sidebar.image("https://github.com/anjieliu121/virus_database/blob/main/images/ut_logo.png?raw=true")
 # css
 with open('utils/style.css') as f:
     css = f.read()

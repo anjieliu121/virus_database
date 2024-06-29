@@ -11,7 +11,7 @@ page = read_json("respiratory_viruses/megadata/response.json")
 st.markdown(f">{page['description']}")
 
 # get data
-file_path = f"{page["section"]}/data/{page["file_name"]}"
+file_path = f"{page['section']}/data/{page['file_name']}"
 full_data = read_df(file_path)
 # download data, updated date, source
 download_full_data(file_path, page["file_name"], page["local_file_update_date"], page["source"])
