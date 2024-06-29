@@ -4,7 +4,14 @@ import streamlit.components.v1 as components
 # lab logo and database description
 col1, col2 = st.columns([0.2, 0.8])
 with col1:
-    st.image('images/database_logo.png')
+    st.markdown(
+        """
+        <a href="https://meyers-database.streamlit.app">
+            <img src="https://github.com/anjieliu121/virus_database/blob/main/images/database_logo.png?raw=true" alt="Meyers Lab">
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
 with col2:
     st.header("The Meyers Database portal offers descriptions and interactive visualizations of data \
     utilized in scenario hubs, forecasts, or other scientific projects.\nIts primary function is to facilitate \
@@ -39,7 +46,7 @@ st.divider()
 # author
 st.header("Other Resources")
 # linkedin link
-col1, col2, col3 = st.columns([0.2, 0.2, 0.8], vertical_alignment="top")
+col1, col2, col3 = st.columns([0.3, 0.3, 0.4], vertical_alignment="top")
 with col1:
     st.markdown("Database Author")
     st.markdown(
