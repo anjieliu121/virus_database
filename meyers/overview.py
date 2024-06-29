@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 # lab logo and database description
-col1, col2 = st.columns([0.15, 0.85])
+col1, col2 = st.columns([0.2, 0.8])
 with col1:
     st.image('images/database_logo.png')
 with col2:
@@ -21,9 +21,19 @@ st.divider()
 
 # contact info
 st.header("Contact Us")
-# embedded meyers lab
-iframe_src = "http://www.bio.utexas.edu/research/meyers/index.html"
-components.iframe(iframe_src, height=400, scrolling=True)
+col1, col2 = st.columns([0.2, 0.8])
+with col1:
+    st.markdown(
+        """
+        <a href="http://www.bio.utexas.edu/research/meyers/">
+            <img src="https://github.com/anjieliu121/virus_database/blob/main/images/lab_logo.png?raw=true" alt="Meyers Lab">
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
+# embedded meyers lab: does not show up when deployed
+# iframe_src = "http://www.bio.utexas.edu/research/meyers/index.html"
+# components.iframe(iframe_src, height=400, scrolling=True)
 st.divider()
 
 # author
