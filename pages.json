@@ -1,0 +1,20 @@
+{
+  "meyers": [
+    {
+      "source": "meyers/overview.py",
+      "title": "Overview",
+      "icon": "\uD83D\uDD38",
+      "url_path": "overview",
+      "default": true
+    }
+  ],
+  "respiratory_viruses": [
+    {
+      "source": "respiratory_viruses/response.py",
+      "title": "2023 Respiratory Virus Response",
+      "icon": "\uD83D\uDD2D",
+      "url_path": "respiratory_viruses/2023_response",
+      "default": false
+    }
+  ]
+}

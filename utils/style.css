@@ -1,0 +1,10 @@
+div.stDownloadButton > button:first-child {
+    background-color: #005f86;
+    color:#FFFFFF;
+}
+
+div.stLinkButton {
+    color: #fff;
+        background-color: #123;
+        text-decoration: none;
+}

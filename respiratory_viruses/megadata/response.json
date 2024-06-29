@@ -1,0 +1,35 @@
+{
+  "name":"response",
+  "section":"respiratory_viruses",
+  "type":"real",
+  "file_name":"2023_Respiratory_Virus_Response_-_NSSP_Emergency_Department_Visits_-_COVID-19__Flu__RSV__Combined.csv",
+  "page_name":"Respiratory Virus Response 2022-24 NSSP Emergency Department Visits",
+  "description":"National Syndromic Surveillance Program (NSSP) reports the __weekly__ percentage of emergency department (ED) patient visits for __COVID-19, Flu, RSV, and Combined__ across the United Stages",
+  "source":"https://data.cdc.gov/Public-Health-Surveillance/2023-Respiratory-Virus-Response-NSSP-Emergency-Dep/vutn-jzwm",
+  "metadata":"https://data.cdc.gov/api/views/vutn-jzwm.json",
+  "local_file_update_date":"6/28/2024",
+  "upload_users":[
+    "Shraddha R. Bandekar",
+    "Anjie Liu"
+  ],
+  "columns":{
+    "week_end":{
+      "description":"Morbidity and Mortality Weekly Report (MMWR) week ending on day"
+    },
+    "pathogen":{
+      "description":"COVID, Flu, RSV, Combined (includes unduplicated patient visits for any one or more of previous), based on coded ED discharge diagnoses",
+      "values":[
+        "COVID-19",
+        "Influenza",
+        "RSV",
+        "Combined"
+      ]
+    },
+    "geography":{
+      "description":"Name of state, district, or territory. United States for entire country combined"
+    },
+    "percent_visits":{
+      "description":"Percent of visits with specified pathogen of all visits for specified geography and week"
+    }
+  }
+}
