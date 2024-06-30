@@ -1,6 +1,5 @@
 import streamlit as st
 import json
-import plotly.graph_objects as go
 import plotly.express as px
 
 from utils.data_io import read_json, read_df, add_lat_lon

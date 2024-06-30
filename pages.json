@@ -16,5 +16,14 @@
       "url_path": null,
       "default": false
     }
+  ],
+  "flu": [
+    {
+      "source": "flu/vaccine_effectiveness.py",
+      "title": "2011-2024 Flu Vaccine Effectiveness Estimates",
+      "icon": "\uD83D\uDD2D",
+      "url_path": null,
+      "default": false
+    }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "name":"vaccine_effectiveness",
+  "section":"flu",
+  "type":"real",
+  "file_name":"",
+  "page_name":"Flu Vaccine Effectiveness Estimates 2011-2024",
+  "description":"Centers for Disease Control and Prevention (CDC) estimates the seasonal flu vaccine effectiveness by age group and virus subtype __every year__ from 2011 to 2024",
+  "source": "https://www.cdc.gov/flu/vaccines-work/effectiveness-studies.htm",
+  "metadata":"",
+  "local_file_update_date":"",
+  "upload_users":[
+    "Shraddha R. Bandekar"
+  ],
+  "columns":{}
+}

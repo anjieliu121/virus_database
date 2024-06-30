@@ -4,7 +4,7 @@
   "type":"real",
   "file_name":"2023_Respiratory_Virus_Response_-_NSSP_Emergency_Department_Visits_-_COVID-19__Flu__RSV__Combined.csv",
   "page_name":"Respiratory Virus Response 2022-24 NSSP Emergency Department Visits",
-  "description":"National Syndromic Surveillance Program (NSSP) reports the __weekly__ percentage of emergency department (ED) patient visits for __COVID-19, Flu, RSV, and Combined__ across the United Stages",
+  "description":"National Syndromic Surveillance Program (NSSP) reports the __weekly__ percentage of emergency department (ED) patient visits for __COVID-19, Flu, RSV, and Combined__ across the United Stages from 2022-10-01 to current time.",
   "source":"https://data.cdc.gov/Public-Health-Surveillance/2023-Respiratory-Virus-Response-NSSP-Emergency-Dep/vutn-jzwm",
   "metadata":"https://data.cdc.gov/api/views/vutn-jzwm.json",
   "local_file_update_date":"6/28/2024",

@@ -10,6 +10,7 @@ pages_json = read_json('pages.json')
 pages = {
     "meyers": [],
     "respiratory_viruses": [],
+    "flu": []
 }
 
 for k in pages_json.keys():
@@ -23,7 +24,7 @@ pg = st.navigation(
         "Meyers Database": pages["meyers"],
         "Respiratory Viruses": pages["respiratory_viruses"],
         "COVID-19": [],
-        "Flu": [],
+        "Flu": pages["flu"],
         "RSV": [],
         "Bird Flu": []
     }
