@@ -17,6 +17,11 @@ def download_full_data(file_path, file_name, date, source):
         st.caption("Data Source:  \n [link](%s)" % source)
 
 
+def single_select(caption, options, default=0, key=None):
+    box = st.selectbox(caption, options, index=default, key=key)
+    return box
+
+
 def multi_select(caption, options, *default):
     if len(default) > 0:
         box = st.multiselect(caption, options, default=list(default))

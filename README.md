@@ -40,3 +40,8 @@ virus_database/
 
 # color
 logo: #008cba
+
+# reference
+- utils/us-states.json: https://github.com/PublicaMundi/MappingAPI/blob/master/data/geojson/us-states.json
+- colored map: https://ozgunhaznedar-swiss-renewable-energy-app-srcmain-p0dfd5.streamlit.app
+- UT colors: https://brand.utexas.edu/identity/color/

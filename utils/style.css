@@ -3,8 +3,26 @@ div.stDownloadButton > button:first-child {
     color:#FFFFFF;
 }
 
+div.stDownloadButton > button:first-child:hover {
+    outline: 2px solid #005f86; /* Customize the color and size as needed */
+    outline-offset: 0px; /* Optional: adjust the distance of the outline from the element */
+}
+
+/* multi-select */
 span[data-baseweb="tag"] {
     background-color: #bf5700 !important;
     color:#FFFFFF; padding: 10px;
 }
 
+/* single-select */
+.stSelectbox:first-of-type > div[data-baseweb="select"] > div {
+    background-color: #bf5700 !important;
+    color:#FFFFFF;
+}
+
+.stSelectbox:first-of-type > div[data-baseweb="select"] > div:active,
+.stSelectbox:first-of-type > div[data-baseweb="select"] > div:hover,
+.stSelectbox:first-of-type > div[data-baseweb="select"] > div:focus,
+.stSelectbox:first-of-type > div[data-baseweb="select"] > div:checked{
+    outline: 2px solid  #bf5700; /* Customize the color and size as needed */
+}
