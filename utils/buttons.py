@@ -2,7 +2,7 @@ import streamlit as st
 
 
 def download_full_data(file_path, file_name, date, source):
-    columns = st.columns([0.2, 0.1, 0.1, 0.6])
+    columns = st.columns([0.2, 0.2, 0.2, 0.4])
     with columns[0]:
         with open(file_path) as f:
             st.download_button(
