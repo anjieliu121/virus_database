@@ -8,23 +8,29 @@ from utils.data_display import display_full_data, display_subset_data
 from utils.text import explain_graph, data_contributor
 
 
-# set up
-st.markdown("# 2023 Respiratory Virus Response")
+########################################################################################################################
+#                                               set up                                                                 #
+########################################################################################################################
 page = read_json("respiratory_viruses/megadata/response.json")
+data_path = f"{page['section']}/data/{page['file_name']}"
+
+st.markdown(f"# {page['page_name']}")
 # SyntaxError: f-string: unmatched '[' -> inside f"", we cannot have another pair of double quotes, must be single quotes
 st.markdown(f">{page['description']}")
 
 # get data
-file_path = f"{page['section']}/data/{page['file_name']}"
-data_full = read_df(file_path)
+data_full = read_df(data_path)
 
 # download data, updated date, source
-download_full_data(file_path, page["file_name"], page["local_file_update_date"], page["source"])
+download_full_data(data_path, page["file_name"], page["local_file_update_date"], page["source"])
 
 # display data
 display_full_data(data_full)
 
-# visualization
+
+########################################################################################################################
+#                                               plots                                                                  #
+########################################################################################################################
 st.markdown("## Interactive Data Visualization")
 
 # graphs I want to make:
@@ -32,7 +38,10 @@ st.markdown("## Interactive Data Visualization")
 # time-series for each state for one or more pathogens
 
 
-st.markdown("##### Evolution of Pathogen Over Time in the United States")
+########################################################################################################################
+#                                               plot                                                                   #
+########################################################################################################################
+st.markdown("##### Percent Visits of Pathogen Over Time in the United States")
 # select pathogen
 options_pathogen = page["columns"]["pathogen"]["values"]
 chosen_pathogen = single_select("Select a Pathogen", options_pathogen, default=0, key="pathogen1")
@@ -68,16 +77,23 @@ fig.update_layout(
 st.plotly_chart(fig, use_container_width=True)
 st.divider()
 
+########################################################################################################################
+#                                               plot                                                                   #
+########################################################################################################################
 st.markdown("##### Pathogen at a Specific Week in the United States")
+
 # select pathogen
 options_pathogen = page["columns"]["pathogen"]["values"]
 chosen_pathogen = single_select("Select a Pathogen", options_pathogen, default=0, key="pathogen2")
+
 # select week
 options_week = data_full["week_end"].unique().tolist()
 chosen_week = single_select("Select a Week_End", options_week, default=0)
+
 # prepare data
 data_subset = data_full[(data_full["week_end"] == chosen_week) & (data_full["pathogen"] == chosen_pathogen)]
 display_subset_data(data_subset, None, "geography")
+
 # graph
 explain_graph(f"Percent Visits of {chosen_pathogen} in Emergency Department in the United States in the Week Ending on {chosen_week}")
 fig = px.choropleth_mapbox(
@@ -104,6 +120,9 @@ st.plotly_chart(fig, use_container_width=True)
 st.divider()
 
 
+########################################################################################################################
+#                                               plot                                                                   #
+########################################################################################################################
 st.markdown("##### Evolution of Pathogen Over Time in a Specific Geography")
 # select geography
 options_geography = page["columns"]["geography"]["values"]

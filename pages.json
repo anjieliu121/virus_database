@@ -11,7 +11,7 @@
   "respiratory_viruses": [
     {
       "source": "respiratory_viruses/response.py",
-      "title": "2023 Respiratory Virus Response",
+      "title": "2022-24 Respiratory Virus Response",
       "icon": "\uD83D\uDD2D",
       "url_path": null,
       "default": false
@@ -20,7 +20,37 @@
   "flu": [
     {
       "source": "flu/vaccine_effectiveness.py",
-      "title": "2011-2024 Flu Vaccine Effectiveness Estimates",
+      "title": "2011-24 Flu Vaccine Effectiveness Estimates",
+      "icon": "\uD83D\uDD2D",
+      "url_path": null,
+      "default": false
+    }
+  ],
+  "covid19": [
+    {
+      "source": "covid19/patient_impact_hospital_capacity.py",
+      "title": "2020-24 COVID-19 Reported Patient Impact and Hospital Capacity by State",
+      "icon": "\uD83D\uDD2D",
+      "url_path": null,
+      "default": false
+    },
+    {
+      "source": "covid19/case_surveillance.py",
+      "title": "2020-22 COVID-19 Case Surveillance Public Use Data with Geography",
+      "icon": "\uD83D\uDD2D",
+      "url_path": null,
+      "default": false
+    },
+    {
+      "source": "covid19/vaccine_adult.py",
+      "title": "2023-24 Cumulative Percentage of Adults 18 Years and Older Vaccinated with the Updated 2023-24 COVID-19 Vaccine",
+      "icon": "\uD83D\uDD2D",
+      "url_path": null,
+      "default": false
+    },
+    {
+      "source": "covid19/vaccine_children.py",
+      "title": "2023-24 Cumulative Percentage of Children Ages 6 Months -17 Years Who Are Up to Date with the Updated 2023-24 COVID-19 Vaccine",
       "icon": "\uD83D\uDD2D",
       "url_path": null,
       "default": false

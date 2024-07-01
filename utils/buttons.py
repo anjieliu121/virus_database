@@ -1,8 +1,8 @@
 import streamlit as st
 
 
-def download_full_data(file_path, file_name, date, source, source_only=False):
-    if source_only:
+def download_full_data(file_path, file_name, date, source):
+    if file_name == "":
         st.caption("Source:  [link](%s)" % source)
         st.caption("Visualization will be added soon.")
     else:
@@ -22,6 +22,8 @@ def download_full_data(file_path, file_name, date, source, source_only=False):
 
 
 def single_select(caption, options, default=0, key=None):
+    if isinstance(default, str):
+        default = options.index(default)
     box = st.selectbox(caption, options, index=default, key=key)
     return box
 

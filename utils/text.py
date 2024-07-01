@@ -6,6 +6,11 @@ def explain_graph(txt):
                 unsafe_allow_html=True)
 
 
+def column_description(txt):
+    st.markdown(f'<p style="background-color:#ffd600;color:#333f48;padding: 10px;border-radius: 8px;">{txt}</p>',
+                unsafe_allow_html=True)
+
+
 def data_contributor(names):
     st.markdown("## Thank you!")
     st.markdown("Thank you for sharing this dataset to Meyers Database!")

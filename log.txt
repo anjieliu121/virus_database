@@ -1,3 +1,63 @@
+commit 99a4b0e32e0db2033f532c564d29d85efbfa06f5
+Author: anjieliu121 <anjie.liu@utexas.edu>
+Date:   Sun Jun 30 15:59:02 2024 -0500
+
+    finish 2011-2024 flu vaccine effectiveness estimates - data to be made
+
+commit a45fb58cd01157f622a2774da819678ade5481e7
+Author: anjieliu121 <anjie.liu@utexas.edu>
+Date:   Sun Jun 30 15:40:09 2024 -0500
+
+    add requirements
+
+commit 8114abba9b6d7dd69ab539aac37084bc0cd000fb
+Author: anjieliu121 <anjie.liu@utexas.edu>
+Date:   Sun Jun 30 15:36:13 2024 -0500
+
+    finish 2023 Respiratory Virus Response
+
+commit 7deb3a16fdcae7ce347af24384f70137471a3e53
+Author: anjieliu121 <anjie.liu@utexas.edu>
+Date:   Sat Jun 29 21:27:28 2024 -0500
+
+    I should not define the url for st.Page(), this creates all the network connection issues
+
+commit 6f06a41202d208de8d8df17ff75b06a466080d4c
+Author: anjieliu121 <anjie.liu@utexas.edu>
+Date:   Sat Jun 29 18:27:56 2024 -0500
+
+    lab_logo has the wrong font size
+
+commit bf6f86e98662e1ad4c50736b39798ad30eebe5c7
+Author: anjieliu121 <anjie.liu@utexas.edu>
+Date:   Sat Jun 29 18:13:10 2024 -0500
+
+    change default theme to light
+
+commit 28ed37a75634cb9e64af3efeb588d32806fa3419
+Author: anjieliu121 <anjie.liu@utexas.edu>
+Date:   Sat Jun 29 17:58:54 2024 -0500
+
+    response page: SyntaxError: f-string: unmatched '['
+
+commit 27bb42dcac4942eb3c79f4a118ccca0bc2505d68
+Author: anjieliu121 <anjie.liu@utexas.edu>
+Date:   Sat Jun 29 17:54:48 2024 -0500
+
+    overview page: change embedded iframe to clickable image
+
+commit 501b81e14c25a9ded751c565b36682a9c7312f77
+Author: anjieliu121 <anjie.liu@utexas.edu>
+Date:   Sat Jun 29 17:35:27 2024 -0500
+
+    when deployed, the non-default page has errors
+
+commit 8a487c7a75663ef438f88df44207b91730442fa4
+Author: anjieliu121 <anjie.liu@utexas.edu>
+Date:   Sat Jun 29 17:31:14 2024 -0500
+
+    non-default page has network issues and becomes empty when refreshed
+
 commit 7bc91d3fdbaf2fe928a5d7379867d0fae5ef74be
 Author: anjieliu121 <anjie.liu@utexas.edu>
 Date:   Sat Jun 29 15:56:49 2024 -0500
