@@ -36,7 +36,7 @@
     },
     {
       "source": "covid19/case_surveillance.py",
-      "title": "2020-22 COVID-19 Case Surveillance Public Use Data with Geography",
+      "title": "2020-24 COVID-19 Case Surveillance Public Use Data with Geography",
       "icon": "\uD83D\uDD2D",
       "url_path": null,
       "default": false

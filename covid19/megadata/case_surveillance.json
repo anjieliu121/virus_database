@@ -1,0 +1,404 @@
+{
+  "name":"case_surveillance",
+  "section":"covid19",
+  "type":"real",
+  "file_name": "COVID-19_Case_Surveillance_Public_Use_Data",
+  "folder_name":"case_surveillance",
+  "page_name":"2020-24 COVID-19 Case Surveillance Public Use Data with Geography",
+  "description":"The dataset contains 19 elements for all COVID-19 cases shared with CDC and includes demographics, geography, any exposure history, disease severity indicators and outcomes, and presence of any underlying medical conditions and risk behaviors. __Note:__ Authorizations to collect certain public health data expired at the end of the U.S. public health emergency declaration on May 11, 2023. The following jurisdictions discontinued COVID-19 case notifications to CDC: Iowa (11/8/21), Kansas (5/12/23), Kentucky (1/1/24), Louisiana (10/31/23), New Hampshire (5/23/23), and Oklahoma (5/2/23). Please note that these jurisdictions will not routinely send new case data after the dates indicated. As of 7/13/23, case notifications from Oregon will only include pediatric cases resulting in death.",
+  "source":"https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data-with-Ge/n8mc-b4w4",
+  "metadata":"https://data.cdc.gov/api/views/n8mc-b4w4.json",
+  "local_file_update_date":"7/6/2024",
+  "upload_users":[
+    "Shraddha R. Bandekar"
+  ],
+  "notes":{
+    "AK": "There are no data in {'2020-01', '2020-02'}."
+  },
+  "columns":{
+    "case_month":{
+      "dtype": "object",
+      "description":"The earlier of month the Clinical Date (date related to the illness or specimen collection) or the Date Received by CDC",
+      "values":[
+        "2020-01",
+        "2020-02",
+        "2020-03",
+        "2020-04",
+        "2020-05",
+        "2020-06",
+        "2020-07",
+        "2020-08",
+        "2020-09",
+        "2020-10",
+        "2020-11",
+        "2020-12",
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06",
+        "2022-07",
+        "2022-08",
+        "2022-09",
+        "2022-10",
+        "2022-11",
+        "2022-12",
+        "2023-01",
+        "2023-02",
+        "2023-03",
+        "2023-04",
+        "2023-05",
+        "2023-06",
+        "2023-07",
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2023-11",
+        "2023-12",
+        "2024-01",
+        "2024-02",
+        "2024-03",
+        "2024-04",
+        "2024-05",
+        "2024-06"
+      ]
+    },
+    "res_state":{
+      "dtype": "object",
+      "description":"State of residence",
+      "values":[
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "GU",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MP",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "PR",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VI",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY"
+      ]
+    },
+    "state_fips_code":{
+      "dtype": "object",
+      "description":"State FIPS code",
+      "values":[
+        "06",
+        "48",
+        "36",
+        "12",
+        "17",
+        "42",
+        "39",
+        "37",
+        "34",
+        "26",
+        "13",
+        "47",
+        "04",
+        "51",
+        "25",
+        "18",
+        "53",
+        "45",
+        "29",
+        "27"
+      ]
+    },
+    "res_county":{
+      "dtype": "object",
+      "description":"County of residence",
+      "values":[
+        "NA",
+        "LOS ANGELES",
+        "COOK",
+        "MARICOPA",
+        "ORANGE",
+        "MIAMI-DADE",
+        "JEFFERSON",
+        "SAN DIEGO",
+        "KINGS",
+        "HARRIS",
+        "MONTGOMERY",
+        "QUEENS",
+        "CLARK",
+        "SUFFOLK",
+        "MIDDLESEX",
+        "RIVERSIDE",
+        "SAN BERNARDINO",
+        "WASHINGTON",
+        "DALLAS",
+        "FRANKLIN"
+      ]
+    },
+    "county_fips_code":{
+      "dtype": "object",
+      "description":"County FIPS code",
+      "values":[
+        "NA",
+        "06037",
+        "17031",
+        "04013",
+        "12086",
+        "06073",
+        "48201",
+        "36047",
+        "36081",
+        "06059",
+        "06065",
+        "06071",
+        "48113",
+        "36061",
+        "32003",
+        "12011",
+        "48029",
+        "36059",
+        "36005",
+        "48439"
+      ]
+    },
+    "age_group":{
+      "dtype": "object",
+      "description":"Age group [0 - 17 years; 18 - 49 years; 50 - 64 years; 65 + years; Unknown; Missing; NA, if value suppressed for privacy protection.]",
+      "values":[
+        "18 to 49 years",
+        "50 to 64 years",
+        "0 - 17 years",
+        "65+ years",
+        "NA",
+        "Missing"
+      ]
+    },
+    "sex":{
+      "dtype": "object",
+      "description":"Sex [Female; Male; Other; Unknown; Missing; NA, if value suppressed for privacy protection.]",
+      "values":[
+        "Female",
+        "Male",
+        "NA",
+        "Unknown",
+        "Missing",
+        "Other"
+      ]
+    },
+    "race":{
+      "dtype": "object",
+      "description":"Race [American Indian/Alaska Native; Asian; Black; Multiple/Other; Native Hawaiian/Other Pacific Islander; White; Unknown; Missing; NA, if value suppressed for privacy protection.]",
+      "values":[
+        "White",
+        "NA",
+        "Unknown",
+        "Black",
+        "Missing",
+        "Asian",
+        "Multiple/Other",
+        "American Indian/Alaska Native",
+        "Native Hawaiian/Other Pacific Islander"
+      ]
+    },
+    "ethnicity":{
+      "dtype": "object",
+      "description":"Ethnicity [Hispanic; Non-Hispanic; Unknown; Missing; NA, if value suppressed for privacy protection.]",
+      "values":[
+        "Non-Hispanic/Latino",
+        "NA",
+        "Unknown",
+        "Hispanic/Latino",
+        "Missing"
+      ]
+    },
+    "case_positive_specimen_interval":{
+      "dtype": "float64",
+      "description":"Weeks between earliest date and date of first positive specimen collection",
+      "values":[
+        "0.0",
+        "1.0",
+        "2.0",
+        "-1.0",
+        "3.0",
+        "4.0",
+        "5.0",
+        "-2.0",
+        "6.0",
+        "-4.0",
+        "-3.0",
+        "7.0",
+        "9.0",
+        "8.0",
+        "52.0",
+        "10.0",
+        "-5.0",
+        "11.0",
+        "-6.0",
+        "-52.0"
+      ]
+    },
+    "case_onset_interval":{
+      "dtype": "float64",
+      "description":"Weeks between earliest date and date of symptom onset.",
+      "values":[
+        "0.0",
+        "-1.0",
+        "-2.0",
+        "-3.0",
+        "1.0",
+        "-4.0",
+        "-5.0",
+        "-6.0",
+        "-7.0",
+        "4.0",
+        "2.0",
+        "-8.0",
+        "3.0",
+        "-9.0",
+        "-11.0",
+        "-10.0",
+        "-12.0",
+        "-105.0",
+        "-13.0",
+        "-53.0"
+      ]
+    },
+    "process":{
+      "dtype": "object",
+      "description":"Under what process was the case first identified? [Clinical evaluation; Routine surveillance; Contact tracing of case patient; Multiple; Other; Unknown; Missing]",
+      "values":[
+        "Missing",
+        "Clinical evaluation",
+        "Laboratory reported",
+        "Routine surveillance",
+        "Multiple",
+        "Contact tracing of case patient",
+        "Provider reported",
+        "Unknown",
+        "Other",
+        "Routine physical examination",
+        "Autopsy"
+      ]
+    },
+    "exposure_yn":{
+      "dtype": "object",
+      "description":"In the 14 days prior to illness onset, did the patient have any of the following known exposures: domestic travel, international travel, cruise ship or vessel travel as a passenger or crew member, workplace, airport/airplane, adult congregate living facility (nursing, assisted living, or long-term care facility), school/university/childcare center, correctional facility, community event/mass gathering, animal with confirmed or suspected COVID-19, other exposure, contact with a known COVID-19 case? [Yes, Unknown, Missing]",
+      "values":[
+        "Missing",
+        "Yes",
+        "Unknown"
+      ]
+    },
+    "current_status":{
+      "dtype": "object",
+      "description":"What is the current status of this person? [Laboratory-confirmed case, Probable case]",
+      "values":[
+        "Laboratory-confirmed case",
+        "Probable Case"
+      ]
+    },
+    "symptom_status":{
+      "dtype": "object",
+      "description":"What is the symptom status of this person? [Asymptomatic, Symptomatic, Unknown, Missing]",
+      "values":[
+        "Missing",
+        "Symptomatic",
+        "Unknown",
+        "Asymptomatic"
+      ]
+    },
+    "hosp_yn":{
+      "dtype": "object",
+      "description":"Was the patient hospitalized? [Yes, No, Unknown, Missing]",
+      "values":[
+        "Missing",
+        "No",
+        "Unknown",
+        "Yes"
+      ]
+    },
+    "icu_yn":{
+      "dtype": "object",
+      "description":"Was the patient admitted to an intensive care unit (ICU)? [Yes, No, Unknown, Missing]",
+      "values":[
+        "Missing",
+        "Unknown",
+        "No",
+        "Yes"
+      ]
+    },
+    "death_yn":{
+      "dtype": "object",
+      "description":"Did the patient die as a result of this illness?  [Yes; No; Unknown; Missing; NA, if value suppressed for privacy protection.]",
+      "values":[
+        "Missing",
+        "No",
+        "Unknown",
+        "NA",
+        "Yes"
+      ]
+    },
+    "underlying_conditions_yn":{
+      "dtype": "object",
+      "description":"Did the patient have one or more of the underlying medical conditions and risk behaviors: diabetes mellitus, hypertension, severe obesity (BMI>40), cardiovascular disease, chronic renal disease, chronic liver disease, chronic lung disease, other chronic diseases, immunosuppressive condition, autoimmune condition, current smoker, former smoker, substance abuse or misuse, disability, psychological/psychiatric, pregnancy, other. [Yes, No, blank]",
+      "values":[
+        "Yes",
+        "No"
+      ]
+    }
+  }
+}

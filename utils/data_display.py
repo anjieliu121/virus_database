@@ -1,12 +1,15 @@
 import streamlit as st
 
 from utils.buttons import single_select
-from utils.data_io import subset_df_col
+from utils.data_io import subset_df_col, get_df_size_bytes
 from utils.text import column_description
 
 
 def display_full_data(df, notes=None):
     st.markdown("## Raw Data Preview")
+    #if get_df_size_bytes(df) > 20000000:
+        #st.caption("Only a portion of the raw file is displayed because of its large file size.")
+        #st.dataframe(df.head(100), use_container_width=True, height=265)
     st.dataframe(df, use_container_width=True, height=265)
     if notes is not None:
         st.caption(f"Note: {notes}")

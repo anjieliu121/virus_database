@@ -1,5 +1,8 @@
 .DS_Store
 .idea/
+notebooks/
+.streamlit/secrets.toml
+.streamlit/meyers-database-f746da3be635.json
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

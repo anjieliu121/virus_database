@@ -132,7 +132,8 @@ chosen_pathogen = multi_select("Select a Pathogen", options_pathogen, "COVID-19"
 # prepare data
 data_subset = data_full[data_full['geography'].isin(chosen_geography) & data_full['pathogen'].isin(chosen_pathogen)]
 display_subset_data(data_subset, None, "geography")
-data_subset['geography_pathogen'] = data_subset['geography'] + ' - ' + data_subset['pathogen']
+data_subset = data_subset.copy()  # deal with SettingWithCopyWarning
+data_subset.loc[:, 'geography_pathogen'] = data_subset['geography'] + ' - ' + data_subset['pathogen']
 # graph
 explain_graph(f"Percent Visits of {chosen_pathogen} in Emergency Department in {chosen_geography} from {'2022-10-01'} to {'2024-06-22'}")
 fig = px.line(
