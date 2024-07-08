@@ -12,7 +12,7 @@ from utils.buttons import single_select, download_full_data, download_full_data_
 from utils.data_display import display_full_data, display_cols, display_subset_data
 from utils.data_io import read_json, read_df, read_states, get_state_fullname, convert_to_state_abbreviation, \
     add_state_fullname, read_df_gcp
-from utils.text import explain_graph
+from utils.text import explain_graph, data_contributor
 
 ########################################################################################################################
 #                                               set up                                                                 #
@@ -334,3 +334,4 @@ st.plotly_chart(fig, use_container_width=True)
 
 st.divider()
 
+data_contributor(page["upload_users"])

@@ -10,7 +10,8 @@
   "metadata":"https://data.cdc.gov/api/views/n8mc-b4w4.json",
   "local_file_update_date":"7/6/2024",
   "upload_users":[
-    "Shraddha R. Bandekar"
+    "Shraddha R. Bandekar",
+    "Anjie Liu"
   ],
   "notes":{
     "AK": "There are no data in {'2020-01', '2020-02'}."
