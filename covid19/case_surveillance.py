@@ -17,6 +17,7 @@ from utils.text import explain_graph, data_contributor
 ########################################################################################################################
 #                                               set up                                                                 #
 ########################################################################################################################
+# TODO: split each state by month, store summary/group tables in gcp
 # set up
 page = read_json("covid19/megadata/case_surveillance.json")
 states = page['columns']['res_state']['values']
@@ -49,7 +50,7 @@ chosen_state = convert_to_state_abbreviation(chosen_state_fullname)
 
 # get data
 # data_full = read_df(data_paths[chosen_state], ignore_index=True, dtype=dtypes)
-data_full = read_df_gcp(data_paths[chosen_state])
+data_full = read_df_gcp(data_paths[chosen_state], ignore_index=True, dtype=dtypes)
 
 
 # download data, updated date, source

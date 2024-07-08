@@ -19,7 +19,7 @@ def read_json(file_path):
 @st.cache_data(ttl=24 * 3600)
 def read_df(file_path, ignore_index=False, dtype=None):
     if ignore_index:
-        df = pd.read_csv(file_path, index_col = 0, dtype=dtype)
+        df = pd.read_csv(file_path, index_col=0, dtype=dtype)
     else:
         df = pd.read_csv(file_path, dtype=dtype)
     #for c in df:
@@ -28,10 +28,13 @@ def read_df(file_path, ignore_index=False, dtype=None):
 
 
 @st.cache_data(ttl=24 * 3600)
-def read_df_gcp(file_path):
+def read_df_gcp(file_path, ignore_index=False, dtype=None):
     # example file_path: case_surveillance/AL.csv
     conn = st.connection('gcs', type=FilesConnection)
-    df = conn.read(file_path, input_format="csv")  # , ttl=600
+    if ignore_index:
+        df = conn.read(file_path, input_format="csv", index_col=0, dtype=dtype)# , ttl=600
+    else:
+        df = pd.read_csv(file_path, dtype=dtype)
     return df
 
 # ClientConnectorCertificateError: Cannot connect to host storage.googleapis.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')]
