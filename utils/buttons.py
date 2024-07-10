@@ -40,7 +40,7 @@ def download_full_data_gcp(df, file_name, date, source):
     with columns[2]:
         st.caption("Data Source:  \n [link](%s)" % source)
     with columns[3]:
-        st.caption("File Size:  \n %s" % get_df_size(df))
+        st.caption("Data Size:  \n %s" % get_df_size(df))
 
 
 def single_select(caption, options, default=0, key=None):
@@ -50,10 +50,18 @@ def single_select(caption, options, default=0, key=None):
     return box
 
 
-def multi_select(caption, options, *default):
-    if len(default) > 0:
-        box = st.multiselect(caption, options, default=list(default))
+def multi_select(caption, options, *default, key=None):
+    if len(default) == 1:
+        if isinstance(default[0], list):
+            default = default[0]
+    default_new = []
+    for i in default:
+        if isinstance(i, int):
+            i = options[i]
+        default_new.append(i)
+    if len(default_new) > 0:
+        box = st.multiselect(caption, options, default=list(default_new), key=key)
     else:
-        box = st.multiselect(caption, options, default=None)
+        box = st.multiselect(caption, options, default=None, key=key)
     return box
 
