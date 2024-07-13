@@ -4,7 +4,7 @@
   "type":"real",
   "file_name":"Cumulative_Percentage_of_Adults_18_Years_and_Older_Vaccinated_with_the_Updated_2023-24_COVID-19_Vaccine.csv",
   "folder_name":"",
-  "page_name":"Cumulative Percentage of __Adults__ 18 Years and Older Vaccinated with the Updated 2023-24 COVID-19 Vaccine",
+  "page_name":"Cumulative Percentage of Adults (18 Years and Older) Vaccinated with the Updated 2023-24 COVID-19 Vaccine",
   "description":"This dataset contains weekly COVID-19 vaccination coverage of adults 18 years and older by demographic characteristics.",
   "source":"https://data.cdc.gov/Vaccinations/Cumulative-Percentage-of-Adults-18-Years-and-Older/hm35-qkiu",
   "metadata":"https://data.cdc.gov/api/views/hm35-qkiu.json",
@@ -206,16 +206,16 @@
       "description":"Demographic Category Level (Age, disability status, gender identity, health insurance, overall, poverty status, race and ethnicity, sex, sexual orientation, and urbanicity)",
       "values":[
         "Overall",
-        "Health Insurance Among 18-64 Years",
-        "Urbanicity",
-        "Sexual Orientation",
-        "Sex",
-        "Race/Ethnicity",
-        "Poverty Status",
-        "Health Insurance",
-        "Gender Identity",
+        "Age",
         "Disability Status",
-        "Age"
+        "Gender Identity",
+        "Health Insurance",
+        "Health Insurance Among 18-64 Years",
+        "Poverty Status",
+        "Race/Ethnicity",
+        "Sex",
+        "Sexual Orientation",
+        "Urbanicity"
       ],
       "relationship":{
         "Overall":{

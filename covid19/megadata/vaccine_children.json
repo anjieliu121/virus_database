@@ -1,0 +1,455 @@
+{
+  "name":"vaccine_children",
+  "section":"covid19",
+  "type":"real",
+  "file_name":"Cumulative_Percentage_of_Children_Ages_6_Months_-17_Years_Who_Are_Up_to_Date_with_the_Updated_2023-24_COVID-19_Vaccine.csv",
+  "folder_name":"",
+  "page_name":"Cumulative Percentage of Children (6 Months - 17 Years) Vaccinated with the Updated 2023-24 COVID-19 Vaccine",
+  "description":"This dataset contains weekly COVID-19 vaccination coverage of __children__ aged 6 months to 17 years by demographic characteristics.",
+  "source":"https://data.cdc.gov/Child-Vaccinations/Cumulative-Percentage-of-Children-Ages-6-Months-17/yctb-fv7w",
+  "metadata":"https://data.cdc.gov/api/views/yctb-fv7w.json",
+  "local_file_update_date":"7/13/2024",
+  "upload_users":[
+    "Shraddha R. Bandekar"
+  ],
+  "columns":{
+    "Vaccine":{
+      "description":"COVID-19 Vaccine",
+      "values":[
+        "COVID"
+      ]
+    },
+    "Geographic Level":{
+      "description":"Geography Level (National, Region, State)",
+      "values":[
+        "National",
+        "State",
+        "Substate",
+        "Region"
+      ],
+      "relationship":{
+        "National":{
+          "values":[
+            "National"
+          ],
+          "default":0
+        },
+        "State":{
+          "values":[
+            "Alabama",
+            "Alaska",
+            "Arizona",
+            "Arkansas",
+            "California",
+            "Colorado",
+            "Connecticut",
+            "Delaware",
+            "District of Columbia",
+            "Florida",
+            "Georgia",
+            "Guam",
+            "Hawaii",
+            "Idaho",
+            "Illinois",
+            "Indiana",
+            "Iowa",
+            "Kansas",
+            "Kentucky",
+            "Louisiana",
+            "Maine",
+            "Maryland",
+            "Massachusetts",
+            "Michigan",
+            "Minnesota",
+            "Mississippi",
+            "Missouri",
+            "Montana",
+            "Nebraska",
+            "Nevada",
+            "New Hampshire",
+            "New Jersey",
+            "New Mexico",
+            "New York",
+            "North Carolina",
+            "North Dakota",
+            "Ohio",
+            "Oklahoma",
+            "Oregon",
+            "Pennsylvania",
+            "Puerto Rico",
+            "Rhode Island",
+            "South Carolina",
+            "South Dakota",
+            "Tennessee",
+            "Texas",
+            "Utah",
+            "Vermont",
+            "Virgin Islands",
+            "Virginia",
+            "Washington",
+            "West Virginia",
+            "Wisconsin",
+            "Wyoming"
+          ],
+          "default":"Texas"
+        },
+        "Substate":{
+          "values":[
+            "Illinois-City of Chicago",
+            "Illinois-Rest of State",
+            "New York-New York City",
+            "New York-Rest of State",
+            "Pennsylvania-Philadelphia County",
+            "Pennsylvania-Rest of State",
+            "Texas-Bexar County",
+            "Texas-City of Houston",
+            "Texas-Rest of State"
+          ],
+          "default":"Texas-City of Houston"
+        },
+        "Region":{
+          "values":[
+            "Region 1",
+            "Region 2",
+            "Region 3",
+            "Region 4",
+            "Region 5",
+            "Region 6",
+            "Region 7",
+            "Region 8",
+            "Region 9",
+            "Region 10"
+          ],
+          "default":0
+        }
+      }
+    },
+    "Geographic Name":{
+      "description":"Geography Name ",
+      "values":[
+        "Texas-Rest of State",
+        "National",
+        "Illinois-City of Chicago",
+        "Illinois-Rest of State",
+        "New York-New York City",
+        "New York-Rest of State",
+        "Pennsylvania-Philadelphia County",
+        "Pennsylvania-Rest of State",
+        "Texas-Bexar County",
+        "Texas-City of Houston",
+        "Alabama",
+        "Alaska",
+        "Arizona",
+        "Arkansas",
+        "California",
+        "Colorado",
+        "Connecticut",
+        "Delaware",
+        "District of Columbia",
+        "Florida",
+        "Georgia",
+        "Hawaii",
+        "Idaho",
+        "Illinois",
+        "Indiana",
+        "Iowa",
+        "Kansas",
+        "Kentucky",
+        "Louisiana",
+        "Maine",
+        "Maryland",
+        "Massachusetts",
+        "Michigan",
+        "Minnesota",
+        "Mississippi",
+        "Missouri",
+        "Montana",
+        "Nebraska",
+        "Nevada",
+        "New Hampshire",
+        "New Jersey",
+        "New Mexico",
+        "New York",
+        "North Carolina",
+        "North Dakota",
+        "Ohio",
+        "Oklahoma",
+        "Oregon",
+        "Pennsylvania",
+        "Puerto Rico",
+        "Rhode Island",
+        "South Carolina",
+        "South Dakota",
+        "Tennessee",
+        "Texas",
+        "Utah",
+        "Vermont",
+        "Virgin Islands",
+        "Virginia",
+        "Washington",
+        "West Virginia",
+        "Wisconsin",
+        "Wyoming",
+        "Region 1",
+        "Region 10",
+        "Region 2",
+        "Region 3",
+        "Region 4",
+        "Region 5",
+        "Region 6",
+        "Region 7",
+        "Region 8",
+        "Region 9"
+      ]
+    },
+    "Demographic Level":{
+      "description":"Demographic Category Label (Age, race and ethnicity, sex, health insurance, urbanicity, HHS region, state, poverty, gender identity, sexual orientation, chronic conditions, and disability.)",
+      "values":[
+        "Overall",
+        "Age",
+        "Health Insurance",
+        "Mother's Education",
+        "Poverty Status",
+        "Race/Ethnicity",
+        "Urbanicity"
+
+      ],
+      "relationship":{
+        "Overall":{
+          "values":[
+            "6 months-17 years"
+          ],
+          "default":0
+        },
+        "Urbanicity":{
+          "values":[
+            "Urban MSA Principal City",
+            "Suburban (MSA Non-Principal City)",
+            "Rural (Non-MSA)"
+          ],
+          "default":[
+            "Urban MSA Principal City",
+            "Rural (Non-MSA)"
+          ]
+        },
+        "Race/Ethnicity":{
+          "values":[
+            "Black, Non-Hispanic",
+            "Hispanic",
+            "White, Non-Hispanic",
+            "Other, Non-Hispanic"
+          ],
+          "default":[
+            "Black, Non-Hispanic",
+            "Hispanic"
+          ]
+        },
+        "Poverty Status":{
+          "values":[
+            "Above Poverty, Income < $75k",
+            "Above Poverty, Income >= $75k",
+            "Below Poverty",
+            "Poverty Status Unknown"
+          ],
+          "default":[
+            "Above Poverty, Income >= $75k",
+            "Below Poverty"
+          ]
+        },
+        "Health Insurance":{
+          "values":[
+            "Any Medicaid",
+            "Other Insurance",
+            "Uninsured"
+          ],
+          "default":[
+            "Any Medicaid",
+            "Uninsured"
+          ]
+        },
+        "Age":{
+          "values":[
+            "6-23 months",
+            "6 months-4 years",
+            "5-11 years",
+            "5-17 years",
+            "12-17 years"
+          ],
+          "default":[
+            "6-23 months",
+            "12-17 years"
+          ]
+        },
+        "Mother's Education":{
+          "values":[
+            "Less than high school",
+            "High school or equivalent",
+            "Some college",
+            ">= College degree"
+          ],
+          "default":[
+            "Less than high school",
+            ">= College degree"
+          ]
+        }
+      }
+    },
+    "Demographic Name":{
+      "description":"Name of Specific Demographic (Age: 6mo-23mo, 6mo-4yrs, 5yrs-11yrs, 5yrs-17yrs, 12yrs-17yrs; <br /> Health Insurance: Any Medicaid, Other insurance, Uninsured; <br /> Mother’s Education: Less than high school, High school or equivalent, Some college, College degree or higher; <br /> Overall: Overall; <br /> Poverty Status: Above poverty, income ≥ 75k, Above poverty, income <75k, Below poverty, Poverty status unknown; <br /> Race and Ethnicity: Black, Non-Hispanic, Hispanic, Other, Non-Hispanic, White, Non-Hispanic; <br /> Urbanicity: Rural (Non-MSA), Suburban (MSA Non-Principal City), Urban (MSA Principal City))",
+      "values":[
+        "18+ years",
+        "Insured",
+        "Uninsured",
+        "Rural (Non-MSA)",
+        "Suburban (MSA Non-Principal City)",
+        "Urban MSA Principal City",
+        "Don't Know/Refused",
+        "Gay/Lesbian/Bisexual/Other",
+        "Straight",
+        "Female",
+        "Male",
+        "American Indian/Alaska Native, Non-Hispanic",
+        "Asian, Non-Hispanic",
+        "Black, Non-Hispanic",
+        "Hispanic",
+        "Multiple Race/Other (Excludes Asian, AIAN, PI/NH), Non-Hispanic",
+        "Other, Non-Hispanic",
+        "Pacific Islander/Native Hawaiian, Non-Hispanic",
+        "White, Non-Hispanic",
+        "Above Poverty, Income < $75k",
+        "Above Poverty, Income >= $75k",
+        "Below Poverty",
+        "Poverty Status Unknown",
+        "Cisgender",
+        "Transgender/Nonbinary",
+        "No",
+        "Yes",
+        "18-29 years",
+        "18-49 years",
+        "30-39 years",
+        "40-49 years",
+        "50-64 years",
+        "60+ years",
+        "65+ years",
+        "65-74 years",
+        "75+ years"
+      ]
+    },
+    "indicator_label":{
+      "description":"",
+      "values":[
+        "Up-to-date",
+        "4-level vaccination and intent"
+      ],
+      "relationship":{
+        "Up-to-date":{
+          "values":[
+            "Yes"
+          ],
+          "default":0
+        },
+        "4-level vaccination and intent":{
+          "values":[
+            "Definitely or probably will not get a vaccine",
+            "Definitely will get a vaccine",
+            "Probably will get a vaccine/unsure",
+            "Received a vaccination"
+          ],
+          "default":[
+            "Definitely or probably will not get a vaccine",
+            "Received a vaccination"
+          ]
+        }
+      }
+    },
+    "indicator_category_label":{
+      "description":"",
+      "values":[
+        "Received a vaccination",
+        "Definitely will get a vaccine",
+        "Probably will get a vaccine/unsure",
+        "Definitely or probably will not get a vaccine",
+        "Yes"
+      ]
+    },
+    "Month_Week":{
+      "description":"Month and Week (i.e. October Week 1)",
+      "values":[
+        "October Week 1",
+        "October Week 2",
+        "October Week 3",
+        "October Week 4",
+        "October Week 5",
+        "November Week 1",
+        "November Week 2",
+        "November Week 3",
+        "December Week 1",
+        "November Week 4",
+        "January Week 4",
+        "February Week 1",
+        "January Week 1",
+        "January Week 3",
+        "January Week 2",
+        "December Week 3",
+        "December Week 4",
+        "February Week 2",
+        "February Week 3",
+        "December Week 2",
+        "March Week 2",
+        "March Week 3",
+        "December Week 5",
+        "February Week 4",
+        "March Week 1"
+      ]
+    },
+    "Week_ending":{
+      "description":"Week Ending Date",
+      "values":[
+        "09/30/2023 12:00:00 AM",
+        "10/07/2023 12:00:00 AM",
+        "10/14/2023 12:00:00 AM",
+        "10/21/2023 12:00:00 AM",
+        "10/28/2023 12:00:00 AM",
+        "11/04/2023 12:00:00 AM",
+        "11/11/2023 12:00:00 AM",
+        "11/18/2023 12:00:00 AM",
+        "12/02/2023 12:00:00 AM",
+        "11/25/2023 12:00:00 AM",
+        "01/27/2024 12:00:00 AM",
+        "02/03/2024 12:00:00 AM",
+        "01/06/2024 12:00:00 AM",
+        "01/20/2024 12:00:00 AM",
+        "01/13/2024 12:00:00 AM",
+        "12/16/2023 12:00:00 AM",
+        "12/23/2023 12:00:00 AM",
+        "02/10/2024 12:00:00 AM",
+        "02/17/2024 12:00:00 AM",
+        "12/09/2023 12:00:00 AM",
+        "03/09/2024 12:00:00 AM",
+        "03/16/2024 12:00:00 AM",
+        "12/30/2023 12:00:00 AM",
+        "02/24/2024 12:00:00 AM",
+        "03/02/2024 12:00:00 AM"
+      ]
+    },
+    "Estimate":{
+      "description":"Estimate (%)"
+    },
+    "CI_Half_width_90pct":{
+      "description":"90% Confidence Interval Half Width"
+    },
+    "CI_Half_width_95pct":{
+      "description":"95% Confidence Interval Half Width"
+    },
+    "Unweighted Sample Size":{
+      "description":"Unweighted Sample Size "
+    },
+    "suppression_flag":{
+      "description":"",
+      "values":[
+        "0",
+        "1"
+      ]
+    }
+  }
+}
