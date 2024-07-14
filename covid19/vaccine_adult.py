@@ -5,7 +5,7 @@ import plotly.express as px
 
 from utils.buttons import download_full_data, single_select, multi_select
 from utils.data_display import display_full_data, display_cols, display_subset_data
-from utils.data_io import read_json, read_df, add_state_fullname
+from utils.data_io import read_json, read_df
 from utils.text import explain_graph, data_contributor
 
 ########################################################################################################################

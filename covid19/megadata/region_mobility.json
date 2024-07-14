@@ -1,0 +1,16 @@
+{
+  "name":"region_mobility",
+  "section":"covid19",
+  "type":"real",
+  "file_name":"",
+  "folder_name": "region_mobility",
+  "page_name":"2020-22 Regional Mobility in response to COVID-19",
+  "description": "As global communities responded to COVID-19, we heard from public health officials that the same type of aggregated, anonymized insights we use in products such as Google Maps would be helpful as they made critical decisions to combat COVID-19. These Community Mobility Reports aimed to provide insights into what changed in response to policies aimed at combating COVID-19. The reports charted movement trends over time by geography, across different categories of places such as retail and recreation, groceries and pharmacies, parks, transit stations, workplaces, and residential.",
+  "source": "https://www.google.com/covid19/mobility/",
+  "metadata":"",
+  "local_file_update_date":"7/14/2024",
+  "upload_users":[
+    "Shraddha R. Bandekar"
+  ],
+  "columns":{}
+}
