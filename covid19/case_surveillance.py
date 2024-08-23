@@ -43,9 +43,11 @@ st.markdown(f"# {page['page_name']}")
 st.markdown(f">{page['description']}")
 
 # select state
-options_states = get_state_fullname(states)
+#options_states = get_state_fullname(states)
+options_states = ['Alaska', 'District of Columbia', 'Hawaii', 'North Dakota', 'Puerto Rico', 'South Dakota', 'U.S. Virgin Islands']
 chosen_state_fullname = single_select("Select a State / Federal district / Inhabited territories in the U.S.", options_states,
                              default="Alaska")
+
 chosen_state = convert_to_state_abbreviation(chosen_state_fullname)
 
 # get data
